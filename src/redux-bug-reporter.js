@@ -9,6 +9,8 @@ import { listenToErrors, errorData } from './utils'
 import createSubmit from './integrations/default'
 require('es6-promise').polyfill()
 
+import 'redux-bug-reporter/dist/redux-bug-reporter.css'
+
 // On the server, UnconnectedBugReporter is a placeholder component
 let UnconnectedBugReporter = () => {
   return (<span />)
